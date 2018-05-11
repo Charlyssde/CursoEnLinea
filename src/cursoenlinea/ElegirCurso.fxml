@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cursoenlinea.ElegirCursoController">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="15.0" prefHeight="80.0" prefWidth="350.0" style="-fx-background-repeat: #196280;">
+         <children>
+            <Label layoutX="54.0" layoutY="27.0" text="Categoria: ">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <ComboBox fx:id="cb_Categoria" layoutX="140.0" layoutY="28.0" prefHeight="25.0" prefWidth="170.0" />
+         </children></AnchorPane>
+      <AnchorPane layoutX="435.0" layoutY="15.0" prefHeight="300.0" prefWidth="350.0">
+         <children>
+            <Label layoutX="127.0" layoutY="23.0" text="Mis Cursos: ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ListView fx:id="list_MisCursos" layoutX="14.0" layoutY="58.0" prefHeight="225.0" prefWidth="320.0" />
+         </children></AnchorPane>
+      <AnchorPane layoutX="14.0" layoutY="95.0" prefHeight="390.0" prefWidth="350.0" style="-fx-background-size: 196280;">
+         <children>
+            <ListView fx:id="list_Cursos" layoutX="14.0" layoutY="14.0" prefHeight="360.0" prefWidth="320.0" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="btn_Cancelar" layoutX="466.0" layoutY="426.0" mnemonicParsing="false" onAction="#cancelarButtonAction" prefHeight="30.0" prefWidth="90.0" text="Cancelar" />
+      <Button fx:id="btn_Comprar" layoutX="658.0" layoutY="426.0" mnemonicParsing="false" onAction="#comprarButtonAction" prefHeight="30.0" prefWidth="90.0" text="Comprar" />
+      <Label layoutX="528.0" layoutY="336.0" text="Total:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_Cantidad" layoutX="627.0" layoutY="336.0" text="Cantidad.">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
